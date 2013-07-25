@@ -1,1 +1,5 @@
-Initial commit
+# Example of a traditional accounts class.
+# Apply using:
+
+cd /opt/puppet/week_4
+sudo puppet apply --verbose ./accounts.pp
