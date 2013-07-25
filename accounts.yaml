@@ -1,0 +1,16 @@
+---
+accounts:
+  alice:
+    uid: 1000
+    gid: users
+  bob:
+    uid: 1001
+    gid: users
+  carol:
+    uid: 1002
+    gid: users
+  dan:
+    uid: 1003
+    gid: users
+
+

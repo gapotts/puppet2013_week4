@@ -1,0 +1,7 @@
+---
+:backends:
+  - yaml
+:yaml:
+  :datadir: /opt/puppet/week_4/
+:hierarchy:
+  accounts

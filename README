@@ -1,5 +1,4 @@
-# Example of a traditional accounts class.
-# Apply using:
+#Use the following commands to test account creation with Hiera:
 
 cd /opt/puppet/week_4
-sudo puppet apply --verbose ./accounts.pp
+sudo puppet apply --verbose --hiera_config=./hiera.yaml accounts.pp
