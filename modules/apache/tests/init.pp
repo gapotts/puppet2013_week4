@@ -1,3 +1,3 @@
 class { 'apache':
-  max_clients => 125,
+  max_clients => 135,
 }
