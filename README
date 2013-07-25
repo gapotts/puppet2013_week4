@@ -5,4 +5,9 @@
 # The results of this exercise should look suspiciously like example_2...
 
 # apply with:
-puppet apply --verbose --hiera_config=./hiera.yaml ./accounts.pp
+sudo puppet apply --verbose --hiera_config=./hiera.yaml accounts.pp
+
+# To also manage carol and dan, you need to set the environment, so that
+# hiera will read the environment/%{enviornment} levels of the hierarchy.
+
+sudo puppet apply --verbose --hiera_config=./hiera.yaml --environment=dev accounts.pp
