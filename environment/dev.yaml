@@ -1,0 +1,9 @@
+---
+accounts:
+  carol:
+    uid: 1002
+    gid: users
+  dan:
+    uid: 1003
+    gid: users
+

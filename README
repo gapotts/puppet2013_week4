@@ -1,4 +1,26 @@
-#Use the following commands to test account creation with Hiera:
+#Use the following commands to query Hiera:
 
 cd /opt/puppet/week_4
-sudo puppet apply --verbose --hiera_config=./hiera.yaml accounts.pp
+
+# Simple query for the 'puppet; key/value pair:
+hiera -c ./hiera.yaml puppet
+
+# Query other levels of the hierarchy for the puppet key:
+hiera -c ./hiera.yaml puppet frustration_level=low
+hiera -c ./hiera.yaml puppet frustration_level=high
+
+# Query the numbers array:
+hiera -c ./hiera.yaml numbers
+
+# Query the accounts hash:
+hiera -c ./hiera.yaml accounts
+
+# Query other levels of the hierarchy
+hiera -c ./hiera.yaml numbers sequence=prime
+
+# Query multiple levels of the hierarchy, and combine the results:
+hiera -c ./hiera.yaml -a numbers sequence=prime
+hiera -c ./hiera.yaml -a numbers seuqnce=fibonacci
+
+# It's safe to perform queries that might access non-existant files:
+hiera -c ./hiera.yaml -h accounts environment=prod

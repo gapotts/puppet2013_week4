@@ -4,4 +4,7 @@
 :yaml:
   :datadir: /opt/puppet/week_4/
 :hierarchy:
-  accounts
+  - sequence/%{sequence}
+  - environment/%{environment}
+  - frustration_level/%{frustration_level}
+  - common

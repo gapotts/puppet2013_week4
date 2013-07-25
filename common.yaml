@@ -1,0 +1,21 @@
+---
+# puppet is a key/value pair
+puppet: handy!
+
+# numbers is an array
+numbers: #Array
+  - one
+  - two
+  - three
+  - five
+  - thirteen
+  - eighty-nine
+
+# accounts is a hash
+accounts:
+  alice:
+    uid: 1000
+    gid: users
+  bob:
+    uid: 1001
+    gid: users
