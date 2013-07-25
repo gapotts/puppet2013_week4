@@ -1,16 +1,6 @@
 class apache (
-   $max_clients = undef,
-) {
-
-  if ( $max_clients ) {
-    $max_clients_real = $max_clients
-  } else {
-    if ( $::processorcount > 1 ) {
-      $max_clients_real = 300
-    } else {
-      $max_clients_real = 150
-    }
-  }
+   $max_clients = $apache::params::max_clients,
+) inherits apache::params {
 
   include apache::packages
   include apache::config

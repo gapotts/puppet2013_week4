@@ -117,7 +117,7 @@ MaxRequestsPerChild  4000
 # MaxRequestsPerChild: maximum number of requests a server process serves
 <IfModule worker.c>
 StartServers         4
-MaxClients         <%= scope.lookupvar('apache::max_clients_real') %>
+MaxClients         <%= scope.lookupvar('apache::max_clients') %>
 MinSpareThreads     25
 MaxSpareThreads     75 
 ThreadsPerChild     25

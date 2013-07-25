@@ -1,4 +1,4 @@
-# exercise_5, using subclasses and class chaining
+# exercise_7, using params class
 # You can apply with:
 cd /opt/puppet/week_4
 sudo puppet apply --verbose --modulepath=./modules ./manifests/site.pp
