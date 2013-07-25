@@ -1,11 +1,3 @@
-# exercise_7 solution, adding input validation using is_integer
-# This branch also introduces puppetlabs/stblib
-#
-# You can apply with:
-cd /opt/puppet/week_4
-sudo puppet apply --verbose --modulepath=./modules ./manifests/site.pp
-
-# Exercise_8: Add a smoke test to your apache module
-# Tests belong in modules/apache/tests/init.pp
+# Exercise_8_solution: Add a smoke test to your apache module
 # Apply with:
 sudo puppet apply --verbose --modulepath=./modules ./modules/apache/tests/init.pp
