@@ -1,4 +1,7 @@
-#Use the following commands to test account creation with Hiera:
+# This example uses defined types, hiera, and creat_resources
+# It demonstrates how defined types can help you organize your hiera data
+#
+# Apply with:
 
 cd /opt/puppet/week_4
 sudo puppet apply --verbose --hiera_config=./hiera.yaml accounts.pp

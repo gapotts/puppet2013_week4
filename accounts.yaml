@@ -3,6 +3,7 @@ accounts:
   alice:
     uid: 1000
     gid: users
+    key: AAAAB3NzaC1yc2EAAAABIwAAAQEA5W1eD9ArHvZLMIW9+12XPs9OfnpC2s3tAVjt5P9iUqr7FIeWN01cg63PoI/k9DPvUkaOhnHqtlNuhcF/dH/2sarCjcq5nWvzMFCsByWhvaTfLeiUFWgThzNQAZqKoVpfcHvfSHhW4SvUgl2+xRu3oFgHcIjHCw/mtNECoCs9Z44cC2VLwbnMURkDWbiUQpYlMZDCgS9A8OAfaPa2JT3p+7vQRJMelEK0KAG0k06mphaz1kn+BO5Lf68dBjdSm7Qjh4mx71FI5ZsecPN7RadGSI3BkqNIghz+npXQzOSjquFKzyeAN/LYUMBrPcC9t6IC93omIhPFPqtkIzOEQfMFIQ==
   bob:
     uid: 1001
     gid: users
