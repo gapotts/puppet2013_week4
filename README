@@ -1,1 +1,3 @@
-Initial commit
+# This branch includes a puppet installer
+# To install, run:
+bash scripts/install_puppet.sh
