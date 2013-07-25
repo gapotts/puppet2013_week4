@@ -1,1 +1,3 @@
-Initial commit
+# Example of an ugly apache module. You can apply with:
+cd /opt/puppet/week_4
+sudo puppet apply --verbose --modulepath=./modules ./manifests/site.pp
