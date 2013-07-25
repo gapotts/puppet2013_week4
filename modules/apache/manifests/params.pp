@@ -1,7 +1,7 @@
 class apache::params {
   if ( $::processorcount > 1 ) {
-    $max_clients_real = 300
+    $max_clients = 300
   } else {
-    $max_clients_real = 150
+    $max_clients = 150
   }
 }
