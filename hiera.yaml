@@ -1,0 +1,19 @@
+---
+:backends:
+  - yaml
+  - mysql
+
+:yaml:
+  :datadir: /opt/puppet/week_4/
+
+:hierarchy:
+  - enviornment/%{env}
+  - common
+
+:mysql:
+    :host: localhost
+    :user: root
+    :pass: examplepassword
+    :database: config
+
+    query: SELECT val FROM configdata WHERE var='%{key}' AND environment='%{env}'
