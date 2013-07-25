@@ -1,26 +1,8 @@
-#Use the following commands to query Hiera:
+# Create a file called accounts.pp
+# Use hiera_hash() to get the accounts hash from Hiera and put it into a variable named $accounts
+# Use create_resources to create user resources from that hash
+#   - create_resources('user', $accounts)
+# The results of this exercise should look suspiciously like example_2...
 
-cd /opt/puppet/week_4
-
-# Simple query for the 'puppet; key/value pair:
-hiera -c ./hiera.yaml puppet
-
-# Query other levels of the hierarchy for the puppet key:
-hiera -c ./hiera.yaml puppet frustration_level=low
-hiera -c ./hiera.yaml puppet frustration_level=high
-
-# Query the numbers array:
-hiera -c ./hiera.yaml numbers
-
-# Query the accounts hash:
-hiera -c ./hiera.yaml accounts
-
-# Query other levels of the hierarchy
-hiera -c ./hiera.yaml numbers sequence=prime
-
-# Query multiple levels of the hierarchy, and combine the results:
-hiera -c ./hiera.yaml -a numbers sequence=prime
-hiera -c ./hiera.yaml -a numbers seuqnce=fibonacci
-
-# It's safe to perform queries that might access non-existant files:
-hiera -c ./hiera.yaml -h accounts environment=prod
+# apply with:
+puppet apply --verbose --hiera_config=./hiera.yaml ./accounts.pp
